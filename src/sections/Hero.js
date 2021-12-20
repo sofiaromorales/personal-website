@@ -1,14 +1,17 @@
 import React from 'react'
 
+import NavigationOptions from '../components/NavigationOptions'
+
 const Hero = () => {
     return (
-        <div className='Hero grid grid-cols-8 h-screen'>
-            <div className='col-start-2 col-span-4'>
-                <div className='grid grid-cols-3 h-screen'>
-                    <div className='col-span-2'>
+        <div className='Hero grid auto-rows-max h-screen px-24 py-12'>
+            <div className='grid grid-cols-2 items-end'>
+                <div>
+                    <p className='font-sans text-5xl font-bold tracking-wide'>
                         {`Sofía Rodríguez`}
-                    </div>
+                    </p>
                 </div>
+                <NavigationOptions/>
             </div>
         </div>
     )

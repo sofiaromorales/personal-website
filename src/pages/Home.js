@@ -1,5 +1,6 @@
 import React from 'react'
 
+import AboutMe from '../sections/AboutMe'
 import Hero from '../sections/Hero'
 
 class Home extends React.Component {
@@ -7,6 +8,7 @@ class Home extends React.Component {
         return (
             <div className='Home'>
                 <Hero/>
+                <AboutMe/>
             </div>
         )
     }
