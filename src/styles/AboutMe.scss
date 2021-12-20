@@ -1,5 +1,17 @@
 .AboutMe {
     background-color: $solid-black;
+    .circle {
+        background-color: $solid-white;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .paragraph {
+        color: $dark-grey;
+    }
+    .profile-image {
+        margin-top: 50%;
+        transform: translate(50%, -50%);
+    }
     .quote {
         color: $solid-white;
     }
