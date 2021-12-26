@@ -1,0 +1,14 @@
+.ProjectCard {
+    background-color: $dark-grey;
+    color: $solid-white;
+    .project-description {
+        color: $grey;
+    }
+    .project-languaje {
+        color: $grey;
+    }
+    .circle {
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
