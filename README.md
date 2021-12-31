@@ -1,2 +1,2 @@
 Redesign for www.sofiaro.com
-Coming soon 🚀
+Coming soon 🚀.
