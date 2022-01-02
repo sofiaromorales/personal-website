@@ -3,6 +3,7 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 
 const MY_WORK = 'My Work'
+const OTHERS = 'Others'
 const MAIN_PROJECTS = [
     {
         description: 'WWDC21 Swift playground',
@@ -56,8 +57,13 @@ const Work = () => {
                     {`${MY_WORK}`}
                 </p>
             </div>
-            <div className='grid grid-cols-2 px-48 gap-8'>
+            <div className='grid grid-cols-2 px-48 gap-8 pb-10'>
                 {renderMainProjects()}
+            </div>
+            <div className='px-48'>
+                <p className='subtitle font-medium text-lg'>
+                    {`${OTHERS.toUpperCase()}`}
+                </p>
             </div>
         </div>
     )
