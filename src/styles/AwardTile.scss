@@ -1,0 +1,18 @@
+.AwardTile {
+    .award-circle {
+        background-color: $metallic-grey;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0px 0px 60px 5px rgba(196, 196, 196, 0.43);
+    }
+    .award-description {
+        color: $grey;
+    }
+    .award-image {
+        margin-top: 50%;
+        transform: translate(50%, -50%);
+    }
+    .award-title {
+        color: $grey;
+    }
+}
