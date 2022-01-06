@@ -3,6 +3,7 @@ import React from 'react'
 import PostTile from '../components/PostTile'
 
 const LATEST_POSTS = 'Latest Posts'
+const CHECK_ALL_POSTS = 'Check All Posts'
 
 const posts = [{
     date: 'OCT 31, 2021',
@@ -54,8 +55,13 @@ const LatestPosts = () => {
                     {LATEST_POSTS}
                 </p>
             </div>
-            <div className='px-48 grid grid-cols-3 gap-10'>
+            <div className='px-48 grid grid-cols-3 gap-10 pb-20'>
                 {renderPosts()}
+            </div>
+            <div className='posts-all px-48'>
+                <p className='text-xl tracking-widest text-center'>
+                    {CHECK_ALL_POSTS.toUpperCase()}
+                </p>
             </div>
         </div>
     )
