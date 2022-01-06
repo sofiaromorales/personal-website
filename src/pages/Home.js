@@ -3,6 +3,7 @@ import React from 'react'
 import AboutMe from '../sections/AboutMe'
 import Awards from '../sections/Awards'
 import Hero from '../sections/Hero'
+import LatestPosts from '../sections/LatestPosts'
 import Skills from '../sections/Skills'
 import Work from '../sections/Work'
 
@@ -15,6 +16,7 @@ class Home extends React.Component {
                 <Skills/>
                 <Work/>
                 <Awards/>
+                <LatestPosts/>
             </div>
         )
     }
