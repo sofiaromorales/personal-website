@@ -6,6 +6,7 @@ import Features from '../sections/Features'
 import Hero from '../sections/Hero'
 import LatestPosts from '../sections/LatestPosts'
 import Skills from '../sections/Skills'
+import Socials from '../sections/Socials'
 import Work from '../sections/Work'
 
 class Home extends React.Component {
@@ -19,6 +20,7 @@ class Home extends React.Component {
                 <Awards/>
                 <LatestPosts/>
                 <Features/>
+                <Socials/>
             </div>
         )
     }
