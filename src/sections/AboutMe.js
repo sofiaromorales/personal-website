@@ -20,7 +20,10 @@ const renderQuotes = (quotes) => {
 
 const AboutMe = (props) => {
     return (
-        <div className='AboutMe grid auto-rows-max py-24'>
+        <div
+            id='AboutMe'
+            className='AboutMe grid auto-rows-max py-24'
+        >
             <div className='grid grid-cols-1'>
                 <div>
                     <div className='grid grid-flow-row auto-rows-max justify-center quote'>

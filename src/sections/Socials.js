@@ -45,7 +45,7 @@ const Socials = () => {
                     {LETS_CONNECT.toUpperCase()}
                 </p>
             </div>
-            <div className='grid grid-flow-col auto-cols-max gap-20 px-48 pb-20 justify-center'>
+            <div className='grid grid-flow-col auto-cols-max gap-20 px-48 pb-40 justify-center'>
                 {renderSocials()}
             </div>
         </div>

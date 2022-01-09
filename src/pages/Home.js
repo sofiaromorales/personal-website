@@ -10,11 +10,14 @@ import Skills from '../sections/Skills'
 import Socials from '../sections/Socials'
 import Work from '../sections/Work'
 
+import NavigationBar from '../components/NavigationBar'
+
 class Home extends React.Component {
     render() {
         return (
             <div className='Home'>
                 <Hero/>
+                <NavigationBar/>
                 <AboutMe/>
                 <Skills/>
                 <Work/>

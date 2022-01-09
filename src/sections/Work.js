@@ -51,7 +51,10 @@ const renderMainProjects = () => {
 
 const Work = () => {
     return (
-        <div className='Work grid auto-rows-max py-24'>
+        <div
+            id='Work'
+            className='Work grid auto-rows-max py-24'
+        >
             <div className='px-60 pb-20'>
                 <p className='title font-sans font-bold text-5xl'>
                     {`${MY_WORK}`}
@@ -61,7 +64,7 @@ const Work = () => {
                 {renderMainProjects()}
             </div>
             <div className='px-48'>
-                <p className='subtitle font-medium text-lg'>
+                <p className='subtitle font-medium text-lg tracking-widest'>
                     {`${OTHERS.toUpperCase()}`}
                 </p>
             </div>

@@ -6,7 +6,10 @@ const SKILLS = 'Skills'
 
 const Skills = () => {
     return (
-        <div className='Skills grid auto-rows-max py-24'>
+        <div
+            id='Skills'
+            className='Skills grid auto-rows-max py-24'
+        >
             <div className='px-60'>
                 <p className='title font-sans font-bold text-5xl pb-20'>
                     {`${SKILLS}`}
