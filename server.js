@@ -38,7 +38,19 @@ app.get('*', function (req, res, next) {
 
 app.get('/api/all-posts', (req, res) => {
     const file = fs.readdirSync('./api/docs/posts/')
-    res.send(file)
+    const posts = []
+    file.map(p => {
+        const title = p.slice(0, p.indexOf('_',1))
+        const date = p.slice(p.indexOf('_', 1) + 1, p.indexOf('_', p.indexOf('_', 1) + 2))
+        const subject= p.slice(p.indexOf('_', p.indexOf('_', 1) + 2) + 1, -3)
+        const post = {
+            date,
+            title,
+            subject
+        }
+        posts.push(post)
+    })
+    res.send(posts)
 })
 
 app.get('/api/post/:id', (req, res) => {

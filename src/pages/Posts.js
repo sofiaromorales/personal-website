@@ -2,22 +2,24 @@ import React from 'react'
 
 import PostTileLight from '../components/PostTileLight'
 
+import { API_ROOT } from '../constants'
+
 const ME_AND_MY_THOUGHTS = 'Me & my thoughts'
 const WELCOME_TO_MY_BLOG = 'Welcome to my blog, here you will find some of my thoughts and experiences, some abouth tech some not.'
 
-const posts = [{
-    date: 'OCT 31, 2021',
-    title: 'SOLID Principles',
-    subject: 'SOFTWARE AND SYSTEMS'
-}, {
-    date: 'OCT 31, 2021',
-    title: 'SOLID Principles',
-    subject: 'SOFTWARE AND SYSTEMS'
-}, {
-    date: 'OCT 31, 2021',
-    title: 'SOLID Principles',
-    subject: 'SOFTWARE AND SYSTEMS'
-}]
+// const posts = [{
+//     date: 'OCT 31, 2021',
+//     title: 'SOLID Principles',
+//     subject: 'SOFTWARE AND SYSTEMS'
+// }, {
+//     date: 'OCT 31, 2021',
+//     title: 'SOLID Principles',
+//     subject: 'SOFTWARE AND SYSTEMS'
+// }, {
+//     date: 'OCT 31, 2021',
+//     title: 'SOLID Principles',
+//     subject: 'SOFTWARE AND SYSTEMS'
+// }]
 
 const LANGUAGE_COLORS = [
     {
@@ -32,10 +34,39 @@ const LANGUAGE_COLORS = [
 
 class Posts extends React.Component {
 
+    state = {
+        posts: [],
+    }
+
+    componentDidMount(){
+        fetch(`${API_ROOT}/all-posts`)
+        .then(response => {
+            if (response.ok){
+                return Promise.resolve(response)
+            } else {
+                throw new Error(response)
+            }
+        })
+        .then(response => response.json())
+        .then(response => {
+            const posts = response
+            this.setState({ posts: posts })
+        })
+        .catch(error => {
+            console.log('an error occurred:');
+            console.log(error);
+        })
+    }
+
     render() {
+
+        const {
+            posts
+        } = this.state
 
         const renderPosts = () => {
             return posts.map(post => {
+
                 const subjectColor = LANGUAGE_COLORS.find(color => (
                     color.language == post.subject.split(' ')[0]
                 ))
