@@ -39,10 +39,10 @@ const LatestPosts = () => {
             ))
             return (
                 <div>
-                <PostTile
-                    post={post}
-                    subjectColor={subjectColor}
-                />
+                    <PostTile
+                        post={post}
+                        subjectColor={subjectColor}
+                    />
                 </div>
             )
         })
