@@ -44,6 +44,7 @@ app.get('/api/all-posts', (req, res) => {
         const date = p.slice(p.indexOf('_', 1) + 1, p.indexOf('_', p.indexOf('_', 1) + 2))
         const subject= p.slice(p.indexOf('_', p.indexOf('_', 1) + 2) + 1, -3)
         const post = {
+            id: p,
             date,
             title,
             subject

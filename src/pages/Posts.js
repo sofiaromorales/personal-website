@@ -83,23 +83,23 @@ class Posts extends React.Component {
 
         return (
             <div className='Posts grid auto-rows-max'>
-                <div className='top-bar py-8 px-28'>
+                <div className='top-bar py-8 px-36'>
                     <p className='font-sans text-4xl font-bold tracking-wide'>
                         {`Sofía Rodríguez`}
                     </p>
                 </div>
                 <hr />
-                <div className='title px-28 py-8'>
+                <div className='title px-36 py-8'>
                     <p className='text-5xl font-semibold'>
                         {ME_AND_MY_THOUGHTS}
                     </p>
                 </div>
-                <div className='px-28 pb-20'>
+                <div className='px-36 pb-20'>
                     <p className='welcome text-2xl'>
                         {WELCOME_TO_MY_BLOG}
                     </p>
                 </div>
-                <div className='posts-list grid grid-cols-3 gap-8 px-28'>
+                <div className='posts-list grid grid-cols-3 gap-8 px-36'>
                     {renderPosts()}
                 </div>
             </div>
