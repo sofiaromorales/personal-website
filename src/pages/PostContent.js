@@ -1,5 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+
+import { API_ROOT } from '../constants'
 
 import PostFooter from '../components/PostFooter'
 
@@ -8,7 +13,83 @@ const POST_LINK = '/posts/'
 
 class PostContent extends React.Component {
 
+    state = {
+        post: null
+    }
+
+    componentDidMount(){
+        console.log('this.props.match');
+        console.log(this.props);
+        if (this.props.match.params.id != null){
+            fetch(`${API_ROOT}/post/${this.props.match.params.id}`)
+                .then(response => {
+                    if (response.ok){
+                        return Promise.resolve(response)
+                    }else{
+                        throw new Error()
+                    }
+                })
+                .then(response => response.text())
+                .then(response => {
+                    const post = response
+                    this.setState({ post: post })
+                    //this.setState({ title: this.props.match.params.id.slice(0, this.props.match.params.id.indexOf('_',1))})
+                    //this.setState({date: this.props.match.params.id.slice(this.props.match.params.id.indexOf('_',1) + 1, -3)})
+                    //this.setState({time: post.slice(0, post.indexOf('\n',1))})
+                })
+                .catch(error =>{
+                    console.log('An error ocurred:');
+                    console.log(error);
+                })
+        }
+    }
+
+    renderPost = (post) => {
+        return (
+            <ReactMarkdown
+                children={this.state.post.slice(post.indexOf('\n',1))}
+                components={{
+                    p: ({ node, children }) => {
+                        if (node.children[0].tagName === 'img') {
+                            const image: any = node.children[0];
+                            return (
+                                <div className='image'>
+                                    <img
+                                        src={image.properties.src}
+                                        alt={image.properties.alt}
+                                        style={{ maxWidth: 700, display: 'block', marginRight: 'auto', marginLeft: 'auto' }}
+                                    />
+                                </div>
+                            );
+                        }
+                        // Return default child if it's not an image
+                        return <p>{children}</p>;
+                    },
+                    code({ node, inline, className, children, ...props }) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                            <SyntaxHighlighter
+                                children={String(children).replace(/\n$/, '')}
+                                style={dracula}
+                                language={match[1]}
+                                PreTag="div"
+                                {...props}
+                            />
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        )
+                    }
+                }}
+            />
+        )
+    }
+
     render() {
+
+
+
         return (
             <div className='PostContent grid grid-rows-max'>
                 <div className='top-bar py-8 px-36'>
@@ -23,6 +104,11 @@ class PostContent extends React.Component {
                             {BACK_TO_POSTS}
                         </p>
                     </Link>
+                </div>
+                <div className='px-96 pt-10 mb-20'>
+                    {this.state.post &&
+                        this.renderPost(this.state.post)
+                    }
                 </div>
                 <div className='px-96'>
                     <PostFooter/>

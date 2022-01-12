@@ -25,9 +25,12 @@ class App extends React.Component {
                         <Route
                             path='/posts/:id'
                             exact
-                        >
-                            <PostContent/>
-                        </Route>
+                            render={(props) => (
+                                <PostContent
+                                    {...props}
+                                />
+                            )}
+                        />
                     </Switch>
                 </BrowserRouter>
             </div>

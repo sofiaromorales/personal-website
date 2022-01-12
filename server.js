@@ -56,7 +56,7 @@ app.get('/api/all-posts', (req, res) => {
 
 app.get('/api/post/:id', (req, res) => {
     const file = fs.readFileSync(`./api/docs/posts/${req.params.id}`)
-    req.send(file)
+    res.send(file)
 })
 
 app.listen(port, () => {
