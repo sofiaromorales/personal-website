@@ -8,6 +8,7 @@ import moment from 'moment'
 import { API_ROOT } from '../constants'
 
 import PostFooter from '../components/PostFooter'
+import PostSocialsFooter from '../components/PostSocialsFooter'
 
 const BACK_TO_POSTS = 'Back to posts'
 const POST_LINK = '/posts/'
@@ -139,6 +140,7 @@ class PostContent extends React.Component {
                         </div>
                     </Link>
                 </div>
+                <PostSocialsFooter/>
             </div>
         )
     }
