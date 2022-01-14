@@ -5,6 +5,20 @@ import PostTileLight from '../components/PostTileLight'
 import { API_ROOT } from '../constants'
 
 const ME_AND_MY_THOUGHTS = 'Me & my thoughts'
+const SOCIALS = [
+    {
+        name: 'Email',
+        link: ''
+    },
+    {
+        name: 'GitHub',
+        link: ''
+    },
+    {
+        name: 'Twitter',
+        link: ''
+    }
+]
 const WELCOME_TO_MY_BLOG = 'Welcome to my blog, here you will find some of my thoughts and experiences, some abouth tech some not.'
 
 // const posts = [{
@@ -81,6 +95,20 @@ class Posts extends React.Component {
             })
         }
 
+        const renderSocials = () => {
+            return SOCIALS.map(social => {
+                return (
+                    <div className='social'>
+                        <a href={social.link}>
+                            <p>
+                                {social.name}
+                            </p>
+                        </a>
+                    </div>
+                )
+            })
+        }
+
         return (
             <div className='Posts grid auto-rows-max'>
                 <div className='top-bar py-8 px-36'>
@@ -101,6 +129,13 @@ class Posts extends React.Component {
                 </div>
                 <div className='posts-list grid grid-cols-3 gap-8 px-36'>
                     {renderPosts()}
+                </div>
+                <div className='px-36 mt-20'>
+                    <hr/>
+                </div>
+                <div className='grid grid-flow-col auto-cols-max justify-center gap-8 px-36 mt-5'>
+
+                    {renderSocials()}
                 </div>
             </div>
         )
