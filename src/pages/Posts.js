@@ -41,7 +41,7 @@ class Posts extends React.Component {
             this.setState({ posts: posts })
         })
         .catch(error => {
-            console.log('an error occurred:');
+            console.log('An error occurred:');
             console.log(error);
         })
     }
