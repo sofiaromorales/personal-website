@@ -7,15 +7,26 @@ const PostTileLight = (props) => {
 
     const {
         post,
-        subjectColor
+        subjectColor,
+        color1,
+        color2,
+        color3
     } = props
+
+    console.log(color1);
 
     return (
         <div
             className='PostTileLight grid rows-auto-max'
         >
             <Link to={POST_LINK + `${post.id}`}>
-                <div className='post-hero h-28'>
+                <div
+                    className='post-hero h-28'
+                    style={{
+                        background: `linear-gradient(-45deg, ${color1}, ${color2}, ${color3})`,
+                        backgroundSize: `400% 400%`
+                    }}
+                >
                 </div>
                 <div className='post-description rounded-b-lg'>
                     <div className='grid rows-auto-max my-10 mx-10'>
