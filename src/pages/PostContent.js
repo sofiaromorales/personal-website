@@ -100,7 +100,15 @@ class PostContent extends React.Component {
         )
     }
 
+
+
     render() {
+
+        const {
+            color1,
+            color2,
+            color3
+        } = this.props.match.params
 
         return (
             <div className='PostContent grid grid-rows-max'>
@@ -110,6 +118,19 @@ class PostContent extends React.Component {
                     </p>
                 </div>
                 <hr/>
+                <div
+                    className='post-hero h-72 grid grid-cols-max justify-center content-center'
+                    style={{
+                        background: `linear-gradient(-45deg, #${color1}, #${color2}, #${color3})`,
+                        backgroundSize: `400% 400%`
+                    }}
+                >
+                    <div className='post-title '>
+                        <p className='text-4xl font-bold tracking-wide'>
+                            {this.state.title}
+                        </p>
+                    </div>
+                </div>
                 <div className='px-96 pt-10'>
                     <Link to={POST_LINK}>
                         <p className='secondary-text text-lg'>
