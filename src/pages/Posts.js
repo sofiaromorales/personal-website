@@ -1,5 +1,6 @@
 import React from 'react'
 
+import PostHeader from '../components/PostHeader'
 import PostSocialsFooter from '../components/PostSocialsFooter'
 import PostTileLight from '../components/PostTileLight'
 
@@ -83,11 +84,7 @@ class Posts extends React.Component {
 
         return (
             <div className='Posts grid auto-rows-max'>
-                <div className='top-bar py-8 px-36'>
-                    <p className='font-sans text-4xl font-bold tracking-wide'>
-                        {`Sofía Rodríguez`}
-                    </p>
-                </div>
+                <PostHeader />
                 <hr />
                 <div className='title px-36 py-8'>
                     <p className='text-5xl font-semibold'>

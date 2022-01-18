@@ -7,6 +7,7 @@ import moment from 'moment'
 
 import { API_ROOT } from '../constants'
 
+import PostHeader from '../components/PostHeader'
 import PostFooter from '../components/PostFooter'
 import PostSocialsFooter from '../components/PostSocialsFooter'
 
@@ -112,11 +113,7 @@ class PostContent extends React.Component {
 
         return (
             <div className='PostContent grid grid-rows-max'>
-                <div className='top-bar py-8 px-36'>
-                    <p className='font-sans text-4xl font-bold tracking-wide'>
-                        {`Sofía Rodríguez`}
-                    </p>
-                </div>
+                <PostHeader />
                 <hr/>
                 <div
                     className='post-hero h-72 grid grid-cols-max justify-center content-center'
