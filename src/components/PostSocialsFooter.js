@@ -3,15 +3,15 @@ import React from 'react'
 const SOCIALS = [
     {
         name: 'Email',
-        link: ''
+        link: 'sofiaromorales@gmail.com'
     },
     {
         name: 'GitHub',
-        link: ''
+        link: 'https://github.com/sofiaromorales'
     },
     {
         name: 'Twitter',
-        link: ''
+        link: 'https://twitter.com/sofiaromorales'
     }
 ]
 
@@ -21,7 +21,7 @@ const PostSocialsFooter = () => {
         return SOCIALS.map(social => {
             return (
                 <div className='social'>
-                    <a href={social.link}>
+                    <a href={social.link} target='_blank' rel='noreferrer'>
                         <p>
                             {social.name}
                         </p>
