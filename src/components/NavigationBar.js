@@ -40,10 +40,10 @@ const NavigationBar = () => {
     }, [])
 
     const handleScroll = () => {
-        if (window.scrollY > window.innerHeight + 200 ) {
+        if (window.scrollY > window.innerHeight + 200 && window.location.pathname == '/') {
             document.getElementsByClassName('NavigationBar')[0].style.top = '0'
             document.getElementsByClassName('NavigationBar')[0].style.setProperty('--navigation-background', 'linear-gradient(180deg, rgba(255,255,255,0.365983893557423) 0%, rgba(255,255,255,0) 100%)');
-        } else {
+        } else if (window.location.pathname == '/') {
             document.getElementsByClassName('NavigationBar')[0].style.top = '-100px';
             document.getElementsByClassName('NavigationBar')[0].style.setProperty('--navigation-background', 'black');
         }

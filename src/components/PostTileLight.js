@@ -17,7 +17,7 @@ const PostTileLight = (props) => {
         <div
             className='PostTileLight grid rows-auto-max'
         >
-            <Link to={POST_LINK + `${post.id}/${color1.substring(1)}/${color2.substring(1)}/${color3.substring(1)} `}>
+            <Link to={POST_LINK + `${post.id}/${color1.substring(1)}/${color2.substring(1)}/${color3.substring(1)}`}>
                 <div
                     className='post-hero h-28'
                     style={{
