@@ -14,7 +14,7 @@ const NAVIGATION_OPTIONS = [{
     link: '#Awards'
 }, {
     name: 'Posts',
-    link: '#Posts'
+    link: '/posts/'
 }]
 
 const NavigationBar = () => {

@@ -3,19 +3,23 @@ import React from 'react'
 const navigationOptions = [
     {
         title: 'About',
-        link: ''
+        link: '#AboutMe'
+    },
+    {
+        title: 'Skills',
+        link: '#Skills'
     },
     {
         title: 'Work',
-        link: ''
+        link: '#Work'
     },
     {
         title: 'Awards',
-        link: ''
+        link: '#Awards'
     },
     {
         title: 'Blog',
-        link: ''
+        link: '/posts/'
     }
 ]
 
@@ -25,9 +29,11 @@ const NavigationOptions = () => {
         return navigationOptions.map(o => {
             return (
                 <div className='sm:px-3 lg:px-8'>
-                    <p className='font-sans text-xl'>
-                        {o.title}
-                    </p>
+                    <a href={o.link}>
+                        <p className='font-sans text-xl'>
+                            {o.title}
+                        </p>
+                    </a>
                 </div>
             )
         })
