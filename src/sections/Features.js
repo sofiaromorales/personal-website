@@ -42,7 +42,7 @@ const Features = () => {
                 </p>
             </div>
             <div className='grid grid-cols-2 gap-4 px-48'>
-                {renderFeatures()}
+                { renderFeatures() }
             </div>
         </div>
     )
