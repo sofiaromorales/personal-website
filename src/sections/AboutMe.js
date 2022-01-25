@@ -43,13 +43,19 @@ const AboutMe = (props) => {
                 </div>
                 <div className='grid auto-rows-max mx-auto space-y-8 self-center text-lg'>
                     <div className='paragraph tracking-widest'>
-                        { ABOUT_ME_P1.toUpperCase() }
+                        <p className='text-xl'>
+                            { ABOUT_ME_P1.toUpperCase() }
+                        </p>
                     </div>
                     <div className='paragraph'>
-                        { ABOUT_ME_P2 }
+                        <p className='text-xl'>
+                            { ABOUT_ME_P2 }
+                        </p>
                     </div>
                     <div className='paragraph'>
-                        { ABOUT_ME_P3 }
+                        <p className='text-xl'>
+                            { ABOUT_ME_P3 }
+                        </p>
                     </div>
                 </div>
             </div>

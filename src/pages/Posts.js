@@ -86,17 +86,17 @@ class Posts extends React.Component {
             <div className='Posts grid auto-rows-max'>
                 <PostHeader />
                 <hr />
-                <div className='title px-36 py-8'>
+                <div className='title px-20 xl:px-36 py-8'>
                     <p className='text-5xl font-semibold'>
                         {ME_AND_MY_THOUGHTS}
                     </p>
                 </div>
-                <div className='px-36 pb-20'>
+                <div className='px-20 xl:px-36 pb-20'>
                     <p className='welcome text-2xl'>
                         {WELCOME_TO_MY_BLOG}
                     </p>
                 </div>
-                <div className='posts-list grid grid-cols-3 gap-8 px-36'>
+                <div className='posts-list grid grid-cols-2 xl:grid-cols-3 gap-8 px-20 xl:px-36'>
                     {renderPosts()}
                 </div>
                 <PostSocialsFooter/>

@@ -25,18 +25,17 @@ const PostTile = (props) => {
                 >
                 </div>
                 <div className='post-description rounded-b-lg'>
-                    <div className='grid rows-auto-max my-10 mx-10'>
+                    <div className='grid rows-auto-max my-10 mx-10 truncate ...'>
                         <div className='post-date mb-8'>
                             <p className='font-medium tracking-widest'>
                                 {post.date.toUpperCase()}
                             </p>
                         </div>
-                        <div className='post-title mb-2'>
-                            <p className='text-2xl'>
+                        <div className='post-title mb-2 overflow-hidden'>
+                            <p className='text-2xl inline-block text-ellipsis overflow-hidden'>
                                 {post.title}
                             </p>
                         </div>
-
                         <div className='post-subject flex justify-start'>
                             <div className={`circle h-3 w-3 mr-5 my-auto ${subjectColor ?? 'bg-indigo-500'}`}>
                             </div>

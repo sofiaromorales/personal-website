@@ -92,7 +92,7 @@ const LatestPosts = () => {
                     {LATEST_POSTS}
                 </p>
             </div>
-            <div className='px-48 grid grid-cols-3 gap-10 pb-20'>
+            <div className='px-48 grid grid-cols-2 xl:grid-cols-3 gap-10 pb-20'>
                 {renderPosts()}
             </div>
             <div className='posts-all px-48'>

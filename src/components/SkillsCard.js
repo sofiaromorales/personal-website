@@ -7,7 +7,7 @@ const TECHNOLOGIES = ['GraphQL', 'Redux', 'React', 'REST', 'GraphQL', 'Apollo', 
 const renderSkillsList = (skills) => {
     return skills.map(skill => {
         return (
-            <p className='py-3 font-sans text-lg'>
+            <p className='py-3 font-sans text-xl'>
                 { skill }
             </p>
         )
@@ -18,7 +18,9 @@ const renderSkillsGrid = (skills) => {
     return skills.map(skill => {
         return (
             <div>
-                { skill }
+                <p className='text-xl'>
+                    { skill }
+                </p>
             </div>
         )
     })

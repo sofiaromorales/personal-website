@@ -27,7 +27,7 @@ const PostTileLight = (props) => {
                 >
                 </div>
                 <div className='post-description rounded-b-lg'>
-                    <div className='grid rows-auto-max my-10 mx-10'>
+                    <div className='grid rows-auto-max my-10 mx-10 truncate'>
                         <div className='post-date mb-4'>
                             <p className='font-medium tracking-widest'>
                                 {post.date.toUpperCase()}

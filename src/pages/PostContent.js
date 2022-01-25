@@ -128,14 +128,14 @@ class PostContent extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className='px-96 pt-10'>
+                <div className='px-36 xl:px-96 pt-10'>
                     <Link to={POST_LINK}>
                         <p className='secondary-text text-lg'>
                             {BACK_TO_POSTS}
                         </p>
                     </Link>
                 </div>
-                <div className='px-96 pt-10 mb-20'>
+                <div className='px-36 xl:px-96 pt-10 mb-20'>
                     <p className='mb-10'>
                         {`${moment(this.state.date).format('MMMM Do YYYY')}  🔥 ${this.state.time}  🔥`}
                     </p>
@@ -146,7 +146,7 @@ class PostContent extends React.Component {
                         this.renderPost(this.state.post)
                     }
                 </div>
-                <div className='px-96'>
+                <div className='px-36 xl:px-96'>
                     <PostFooter/>
                 </div>
                 <div className='grid grid-flow-col auto-cols-max px-96 mt-20 justify-center mb-20'>
