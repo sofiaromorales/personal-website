@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const POST_LINK = '/posts/'
+import { POSTS_LINK } from '../constants'
 
 const PostTileLight = (props) => {
 
@@ -18,7 +18,7 @@ const PostTileLight = (props) => {
             className='PostTileLight grid rows-auto-max'
         >
             <Link
-                to={POST_LINK + `${post.id}/${color1.substring(1)}/${color2.substring(1)}/${color3.substring(1)}`}
+                to={POSTS_LINK + `${post.id}/${color1.substring(1)}/${color2.substring(1)}/${color3.substring(1)}`}
                 className='truncate'
             >
                 <div

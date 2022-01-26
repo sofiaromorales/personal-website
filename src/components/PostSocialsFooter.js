@@ -1,19 +1,8 @@
 import React from 'react'
 
-const SOCIALS = [
-    {
-        name: 'Email',
-        link: 'sofiaromorales@gmail.com'
-    },
-    {
-        name: 'GitHub',
-        link: 'https://github.com/sofiaromorales'
-    },
-    {
-        name: 'Twitter',
-        link: 'https://twitter.com/sofiaromorales'
-    }
-]
+import {
+    SOCIALS
+} from '../constants'
 
 const PostSocialsFooter = () => {
 

@@ -1,39 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { API_ROOT } from '../constants'
-
 import PostTile from '../components/PostTile'
 
-const LATEST_POSTS = 'Latest Posts'
-const CHECK_ALL_POSTS = 'Check All Posts'
-const backgroundColors = ['#5348cf', '#331454', '#3F45D2', '#B30FB0', '#E73C7E', '#EE7752', '#48cf8b', '#43BAA6',  '#3D488E', '#525fee']
-const POSTS_LINK = 'posts/'
-
-const latestPosts = [{
-    date: 'OCT 31, 2021',
-    title: 'SOLID Principles',
-    subject: 'SOFTWARE AND SYSTEMS'
-}, {
-    date: 'OCT 31, 2021',
-    title: 'SOLID Principles',
-    subject: 'SOFTWARE AND SYSTEMS'
-}, {
-    date: 'OCT 31, 2021',
-    title: 'SOLID Principles',
-    subject: 'SOFTWARE AND SYSTEMS'
-}]
-
-const LANGUAGE_COLORS = [
-    {
-        language:'Swift',
-        color: 'bg-indigo-500'
-    },
-    {
-        language:'Javascript',
-        color: 'bg-green-500'
-    }
-]
+import {
+    API_ROOT,
+    BACKGROUND_COLORS,
+    CHECK_ALL_POSTS,
+    LANGUAGE_COLORS,
+    LATEST_POSTS,
+    POSTS_LINK
+} from '../constants'
 
 const LatestPosts = () => {
 
@@ -60,7 +37,7 @@ const LatestPosts = () => {
     }, [])
 
     const getRandomColor = () => {
-        return backgroundColors[Math.floor(Math.random() * backgroundColors.length)]
+        return BACKGROUND_COLORS[Math.floor(Math.random() * BACKGROUND_COLORS.length)]
     }
 
     const renderPosts = () => {

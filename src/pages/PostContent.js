@@ -11,8 +11,11 @@ import PostHeader from '../components/PostHeader'
 import PostFooter from '../components/PostFooter'
 import PostSocialsFooter from '../components/PostSocialsFooter'
 
-const BACK_TO_POSTS = 'Back to posts'
-const POST_LINK = '/posts/'
+import {
+    BACK_TO_POSTS,
+    POSTS_LINK
+} from '../constants'
+
 
 class PostContent extends React.Component {
 
@@ -129,7 +132,7 @@ class PostContent extends React.Component {
                     </div>
                 </div>
                 <div className='px-36 xl:px-96 pt-10'>
-                    <Link to={POST_LINK}>
+                    <Link to={POSTS_LINK}>
                         <p className='secondary-text text-lg'>
                             {BACK_TO_POSTS}
                         </p>
@@ -150,7 +153,7 @@ class PostContent extends React.Component {
                     <PostFooter/>
                 </div>
                 <div className='grid grid-flow-col auto-cols-max px-96 mt-20 justify-center mb-20'>
-                    <Link to={POST_LINK}>
+                    <Link to={POSTS_LINK}>
                         <div className='back-to-posts px-5 py-2 border rounded border-4'>
                             <p className='secondary-text font-extrabold text-center text-lg'>
                                 {BACK_TO_POSTS}

@@ -1,20 +1,9 @@
 import React from 'react'
 
-const LETS_CONNECT = `Let's Connect`
-
-const SOCIALS = [{
-    name: 'Polywork',
-    link: 'https://www.polywork.com/sofiaromorales',
-    imageUrl: 'https://user-images.githubusercontent.com/49292858/148478675-7b51ca23-59f8-4caf-95be-e41b3f507e05.png'
-}, {
-    name: 'Twitter',
-    link: 'https://twitter.com/sofiaromorales',
-    imageUrl: 'https://user-images.githubusercontent.com/49292858/148478680-ddb265f0-758e-4b5e-b7e0-99c03e990f86.png'
-},{
-    name: 'GitHub',
-    link: 'https://github.com/sofiaromorales',
-    imageUrl: 'https://user-images.githubusercontent.com/49292858/148478686-4087d173-9625-433b-9fec-99e6daf1962f.png'
-}]
+import {
+    LETS_CONNECT,
+    SOCIALS
+} from '../constants'
 
 const Socials = () => {
 

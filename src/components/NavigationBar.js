@@ -1,21 +1,9 @@
 import React, { useEffect } from 'react'
 
-const NAVIGATION_OPTIONS = [{
-    name: 'About Me',
-    link: '#AboutMe'
-}, {
-    name: 'Skills',
-    link: '#Skills'
-}, {
-    name: 'Work',
-    link: '#Work'
-}, {
-    name: 'Awards',
-    link: '#Awards'
-}, {
-    name: 'Posts',
-    link: '/posts/'
-}]
+import {
+    NAVIGATION_OPTIONS ,
+    SOFIA_RODRIGUEZ
+} from '../constants'
 
 const NavigationBar = () => {
 
@@ -64,7 +52,7 @@ const NavigationBar = () => {
         >
             <div className='title'>
                 <p className='font-sans text-3xl font-bold tracking-wide'>
-                    Sofía Rodríguez
+                    { SOFIA_RODRIGUEZ }
                 </p>
             </div>
             <div className='

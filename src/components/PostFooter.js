@@ -1,11 +1,13 @@
 import React from 'react'
 
-const EMAIL = 'email'
-const IF_YOU_LIKED = 'If you liked this post and wants to chat feel free to send me an '
-const OR_CONTACT_ME_VIA = ' or contact me via '
-const TWITTER = 'Twitter'
-const MAIL_ADDRESS='sofiaromorales@gmail.com'
-const TWITTER_ADDRESS='https://twitter.com/sofiaromorales'
+import {
+    EMAIL,
+    IF_YOU_LIKED,
+    MAIL_ADDRESS,
+    OR_CONTACT_ME_VIA,
+    TWITTER,
+    TWITTER_ADDRESS
+} from '../constants'
 
 const PostFooter = () => {
     return (

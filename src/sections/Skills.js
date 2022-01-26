@@ -2,7 +2,7 @@ import React from 'react'
 
 import SkillsCard from '../components/SkillsCard'
 
-const SKILLS = 'Skills'
+import { SKILLS } from '../constants'
 
 const Skills = () => {
     return (

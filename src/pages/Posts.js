@@ -4,24 +4,13 @@ import PostHeader from '../components/PostHeader'
 import PostSocialsFooter from '../components/PostSocialsFooter'
 import PostTileLight from '../components/PostTileLight'
 
-import { API_ROOT } from '../constants'
-
-const ME_AND_MY_THOUGHTS = 'Me & my thoughts'
-
-const WELCOME_TO_MY_BLOG = 'Welcome to my blog, here you will find some of my thoughts and experiences, some abouth tech some not.'
-
-const LANGUAGE_COLORS = [
-    {
-        language:'Swift',
-        color: 'bg-indigo-500'
-    },
-    {
-        language:'Javascript',
-        color: 'bg-green-500'
-    }
-]
-
-const backgroundColors = ['#5348cf', '#331454', '#3F45D2', '#B30FB0', '#E73C7E', '#EE7752', '#48cf8b', '#43BAA6',  '#3D488E', '#525fee']
+import {
+    API_ROOT,
+    BACKGROUND_COLORS,
+    LANGUAGE_COLORS,
+    ME_AND_MY_THOUGHTS,
+    WELCOME_TO_MY_BLOG
+} from '../constants'
 
 
 class Posts extends React.Component {
@@ -51,7 +40,7 @@ class Posts extends React.Component {
     }
 
     getRandomColor = () => {
-        return backgroundColors[Math.floor(Math.random() * backgroundColors.length)]
+        return BACKGROUND_COLORS[Math.floor(Math.random() * BACKGROUND_COLORS.length)]
     }
 
     render() {

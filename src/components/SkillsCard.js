@@ -1,8 +1,10 @@
 import React from 'react'
 
-const SOFTSKILLSLIST = ['Fast Learner', 'Creative Person', 'Open Source Passionate', 'Accessibility Advocate', 'Full Stack web developer', 'Designing systems end to end']
-const TECHNICALSKILLSLIST = ['Swift', 'Javascript', 'Git', 'UI & UX']
-const TECHNOLOGIES = ['GraphQL', 'Redux', 'React', 'REST', 'GraphQL', 'Apollo', 'NodeJS', 'SwiftUI', 'Design Systems', 'Electron', 'Express', 'Sockets', 'SQL']
+import {
+    SOFTSKILLSLIST,
+    TECHNICALSKILLSLIST,
+    TECHNOLOGIES
+} from '../constants'
 
 const renderSkillsList = (skills) => {
     return skills.map(skill => {

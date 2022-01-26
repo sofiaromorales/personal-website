@@ -1,12 +1,14 @@
 import React from 'react'
 
-const QUOTE1 = `I'm a Problem Solver`
-const QUOTE2 = `I'm a Product Designer`
-const QUOTE3 = `I'm a Problem Solver`
-const PROFILE_IMAGE_URL = 'https://user-images.githubusercontent.com/49292858/146709506-574c8cb4-e492-4252-a400-073b6aa590c9.png'
-const ABOUT_ME_P1 = `Hi I'm Sofía`
-const ABOUT_ME_P2 ='I’m a iOS and web developer based in Caracas, Venezuela. I specialize in building beautifull products that makes a transparent impact in peoples life. I’m an open source advocate a technical writer in development.'
-const ABOUT_ME_P3 = 'I also like teaching, playing music and doing video content. I considre myself an Apple fan and very nerdy in what comes to software architectures.'
+import {
+    ABOUT_ME_P1,
+    ABOUT_ME_P2,
+    ABOUT_ME_P3,
+    PROFILE_IMAGE_URL,
+    QUOTE1,
+    QUOTE2,
+    QUOTE3
+} from '../constants'
 
 const renderQuotes = (quotes) => {
     return quotes.map(q => {

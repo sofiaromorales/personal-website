@@ -2,33 +2,13 @@ import React from 'react'
 
 import ProjectCard from '../components/ProjectCard'
 
-const MY_WORK = 'My Work'
-const OTHERS = 'Others'
-const MAIN_PROJECTS = [
-    {
-        description: 'WWDC21 Swift playground',
-        language: 'Swift',
-        name: 'Cellular Automata',
-        image_url: 'https://user-images.githubusercontent.com/49292858/147419390-df73c586-2619-494d-8c4f-724a6b8667ac.png'
-    },
-    {
-        description: 'TODO App',
-        language: 'Javascript React Electron',
-        name: 'Get Shit Done',
-        image_url: 'https://user-images.githubusercontent.com/49292858/147419388-a09bc744-fa3a-4846-960e-ae7d7afcaa76.png'
-    }
-]
+import {
+    OTHERS,
+    LANGUAGE_COLORS,
+    MAIN_PROJECTS,
+    MY_WORK
+} from '../constants'
 
-const LANGUAGE_COLORS = [
-    {
-        language:'Swift',
-        color: 'bg-indigo-500'
-    },
-    {
-        language:'Javascript',
-        color: 'bg-green-500'
-    }
-]
 
 const renderMainProjects = () => {
     return MAIN_PROJECTS.map(p => {

@@ -1,16 +1,9 @@
 import React from 'react'
 
-const FEATURED_ON = 'Featured On'
-
-const FEATURES = [{
-    imageUrl: 'https://user-images.githubusercontent.com/49292858/148475832-c49b6420-3021-440b-bf10-50ac22c163bf.png',
-    postUrl: 'https://es.abcufoundation.org/sofia-rodriguez/',
-    alt:'ucabista'
-}, {
-    imageUrl: 'https://user-images.githubusercontent.com/49292858/148474629-95d98b04-4255-44ba-92e2-60320cb7a60b.png',
-    postUrl: 'https://elucabista.com/2018/07/11/sofia-rodriguez-futura-ingeniera-reconocida-por-apple/',
-    alt: 'abcu foundation'
-}]
+import {
+    FEATURED_ON,
+    FEATURES
+} from '../constants'
 
 const Features = () => {
 
