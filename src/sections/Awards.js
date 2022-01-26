@@ -25,7 +25,7 @@ const Awards = () => {
     return (
         <div
             id='Awards'
-            className='Awards grid auto-rows-max py-24'
+            className='Awards grid auto-rows-max pb-24'
         >
             <div className='px-60'>
                 <p className='title font-sans font-bold text-5xl pb-20'>

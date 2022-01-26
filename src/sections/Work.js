@@ -43,11 +43,12 @@ const Work = () => {
             <div className='grid grid-cols-2 px-48 gap-8 pb-20'>
                 {renderMainProjects()}
             </div>
-            <div className='px-48'>
-                <p className='subtitle font-medium text-lg tracking-widest'>
-                    {`${OTHERS.toUpperCase()}`}
-                </p>
-            </div>
+            {// <div className='px-48'>
+            //     <p className='subtitle font-medium text-lg tracking-widest'>
+            //         {`${OTHERS.toUpperCase()}`}
+            //     </p>
+            // </div>
+        }
         </div>
     )
 }
