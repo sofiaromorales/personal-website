@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { POSTS_LINK } from '../constants'
 
 const PostTileLight = (props) => {
-
     const {
         post,
         subjectColor,
@@ -12,7 +11,6 @@ const PostTileLight = (props) => {
         color2,
         color3
     } = props
-
     return (
         <div
             className='PostTileLight grid rows-auto-max'
