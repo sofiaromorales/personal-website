@@ -5,8 +5,8 @@ const SITE_ROOT = process.env.NODE_ENV == 'production'
 export const API_ROOT = `${SITE_ROOT}/api`
 
 export const ABOUT_ME_P1 = `Hi I'm Sofía`
-export const ABOUT_ME_P2 ='I’m a iOS and web developer based in Caracas, Venezuela. I specialize in building beautifull products that makes a transparent impact in peoples life. I’m an open source advocate a technical writer in development.'
-export const ABOUT_ME_P3 = 'I also like teaching, playing music and doing video content. I considre myself an Apple fan and very nerdy in what comes to software architectures.'
+export const ABOUT_ME_P2 =`I'm an iOS and web developer based in Caracas, Venezuela. I'm studying software engineering and I have worked in startups and fintech companies.`
+export const ABOUT_ME_P3 = `I'm very interested in accessibility, open-source software, technical writing, and new technologies, you could also find me playing guitar or organizing community events.`
 
 export const AWARDS_LIST = [{
     title: 'WWDC Award',
@@ -41,7 +41,7 @@ export const LANGUAGE_COLORS = [
         color: 'bg-indigo-500'
     },
     {
-        language:'Javascript',
+        language:'JavaScript',
         color: 'bg-green-500'
     }
 ]
@@ -54,8 +54,8 @@ export const MAIN_PROJECTS = [
     },
     {
         description: 'TODO App',
-        language: 'Javascript React Electron',
-        name: 'Get Shit Done',
+        language: 'JavaScript React Electron',
+        name: 'Get Sh*t Done',
         image_url: 'https://user-images.githubusercontent.com/49292858/147419388-a09bc744-fa3a-4846-960e-ae7d7afcaa76.png'
     }
 ]
@@ -89,7 +89,7 @@ export const SOCIALS = [{
     imageUrl: 'https://user-images.githubusercontent.com/49292858/148478686-4087d173-9625-433b-9fec-99e6daf1962f.png'
 }]
 export const SOFTSKILLSLIST = ['Fast Learner', 'Open Source Passionate', 'Accessibility Advocate', 'Full Stack developer', 'Designing systems end to end']
-export const TECHNICALSKILLSLIST = ['Swift', 'Javascript', 'Git', 'UI & UX']
+export const TECHNICALSKILLSLIST = ['Swift', 'JavaScript', 'Git', 'UI & UX']
 export const TECHNOLOGIES = ['GraphQL', 'Redux', 'React', 'REST', 'UIKit', 'Apollo', 'NodeJS', 'SwiftUI', 'Design Systems', 'Electron', 'Express', 'Sockets', 'SQL']
 
 export const MAIL_ADDRESS='sofiaromorales@gmail.com'
