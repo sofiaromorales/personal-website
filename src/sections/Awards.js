@@ -34,7 +34,7 @@ const Awards = () => {
             </div>
             <div className='px-48'>
                 <div className='grid grid-cols-4 gap-10'>
-                    {renderAwards()}
+                    { renderAwards() }
                 </div>
             </div>
         </div>
