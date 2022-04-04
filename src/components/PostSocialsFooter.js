@@ -26,7 +26,7 @@ const PostSocialsFooter = () => {
                 <hr/>
             </div>
             <div className='grid grid-flow-col auto-cols-max justify-center gap-8 px-36 mt-5'>
-                {renderSocials()}
+                { renderSocials() }
             </div>
         </div>
     )
