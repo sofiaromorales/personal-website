@@ -44,14 +44,15 @@ const NavigationBar = () => {
                 grid
                 grid-flow-col
                 grid-cols-2
-                h-20
+                h-0
+                md:h-20
                 px-28
                 gap-8
                 content-center
             '
         >
             <div className='title'>
-                <p className='font-sans text-3xl font-bold tracking-wide'>
+                <p className='font-sans text-3xl font-bold tracking-wide invisible md:visible'>
                     { SOFIA_RODRIGUEZ }
                 </p>
             </div>
@@ -62,6 +63,8 @@ const NavigationBar = () => {
                 gap-8
                 justify-end
                 content-center
+                invisible
+                md:visible
             '>
                 {renderNavigationOptions()}
             </div>

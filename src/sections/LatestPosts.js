@@ -64,15 +64,15 @@ const LatestPosts = () => {
 
     return (
         <div className='LatestPosts grid auto-rows-max py-24'>
-            <div className='px-60'>
+            <div className='px-8 md:px-60'>
                 <p className='title font-sans font-bold text-5xl pb-20'>
                     {LATEST_POSTS}
                 </p>
             </div>
-            <div className='px-48 grid grid-cols-2 xl:grid-cols-3 gap-10 pb-20'>
+            <div className='px-8 md:px-48 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 pb-20'>
                 {renderPosts()}
             </div>
-            <div className='posts-all px-48'>
+            <div className='posts-all px-8 md:px-48'>
                 <Link to={POSTS_LINK}>
                     <p className='text-xl tracking-widest text-center'>
                         {CHECK_ALL_POSTS.toUpperCase()}

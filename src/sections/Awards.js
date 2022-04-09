@@ -27,13 +27,13 @@ const Awards = () => {
             id='Awards'
             className='Awards grid auto-rows-max pb-24'
         >
-            <div className='px-60'>
+            <div className='px-8 md:px-60'>
                 <p className='title font-sans font-bold text-5xl pb-20'>
                     {AWARDS}
                 </p>
             </div>
-            <div className='px-48'>
-                <div className='grid grid-cols-4 gap-10'>
+            <div className='px-8 md:px-48'>
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-10'>
                     {renderAwards()}
                 </div>
             </div>

@@ -34,7 +34,7 @@ const Features = () => {
                     {FEATURED_ON}
                 </p>
             </div>
-            <div className='grid grid-cols-2 gap-4 px-48'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-8 md:px-48'>
                 { renderFeatures() }
             </div>
         </div>

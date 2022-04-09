@@ -35,12 +35,12 @@ const Work = () => {
             id='Work'
             className='Work grid auto-rows-max py-24'
         >
-            <div className='px-60 pb-20'>
+            <div className='px-8 md:px-60 pb-20'>
                 <p className='title font-sans font-bold text-5xl'>
                     {`${MY_WORK}`}
                 </p>
             </div>
-            <div className='grid grid-cols-2 px-48 gap-8 pb-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 px-8 md:px-48 gap-8 pb-20'>
                 {renderMainProjects()}
             </div>
             {// <div className='px-48'>

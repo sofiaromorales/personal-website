@@ -37,16 +37,16 @@ const SkillsCard = () => {
             <div className='grid auto-rows-max'>
                 { renderSkillsList(TECHNICALSKILLSLIST) }
                 <div className='grid auto-rows-max technologies-list'>
-                    <div className='grid grid-cols-4 pt-3 pb-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-4 md:pt-3 md:pb-5'>
                         { renderSkillsGrid(TECHNOLOGIES.slice(0, 4)) }
                     </div>
-                    <div className='grid grid-cols-3 px-20 pb-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 md:px-20 md:pb-5'>
                         { renderSkillsGrid(TECHNOLOGIES.slice(4, 7)) }
                     </div>
-                    <div className='grid grid-cols-4 pb-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-4 md:pb-5'>
                         { renderSkillsGrid(TECHNOLOGIES.slice(7, 11)) }
                     </div>
-                    <div className='grid grid-cols-2 px-20 pb-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 md:px-20 md:pb-5'>
                         { renderSkillsGrid(TECHNOLOGIES.slice(11, 13)) }
                     </div>
                 </div>

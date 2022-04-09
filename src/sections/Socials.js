@@ -29,12 +29,12 @@ const Socials = () => {
 
     return (
         <div className='Socials grid auto-rows-max py-24'>
-            <div className='title px-60 pb-10'>
+            <div className='title px-8 md:px-60 pb-10'>
                 <p className='text-center tracking-widest font-sans text-2xl'>
                     {LETS_CONNECT.toUpperCase()}
                 </p>
             </div>
-            <div className='grid grid-flow-col auto-cols-max gap-20 px-48 pb-40 justify-center'>
+            <div className='grid grid-flow-col auto-cols-max gap-20 px-8 md:px-48 pb-40 justify-center'>
                 {renderSocials()}
             </div>
         </div>

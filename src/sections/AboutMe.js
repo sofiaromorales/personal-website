@@ -33,8 +33,8 @@ const AboutMe = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-2 px-48 mt-24 '>
-                <div className='circle h-96 w-96 mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 px-8 md:px-48 mt-24 '>
+                <div className='circle md:h-96 md:w-96 mx-auto'>
                     <div className='h-full relative'>
                         <img
                             src={PROFILE_IMAGE_URL}

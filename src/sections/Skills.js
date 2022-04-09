@@ -10,12 +10,12 @@ const Skills = () => {
             id='Skills'
             className='Skills grid auto-rows-max py-24'
         >
-            <div className='px-60'>
+            <div className='px-8 md:px-60'>
                 <p className='title font-sans font-bold text-5xl pb-20'>
                     {`${SKILLS}`}
                 </p>
             </div>
-            <div className='px-48'>
+            <div className='px-8 md:px-48'>
                 <SkillsCard/>
             </div>
         </div>
