@@ -12,16 +12,18 @@ import {
 
 const renderMainProjects = () => {
     return MAIN_PROJECTS.map(p => {
+        
         const languageColor = LANGUAGE_COLORS.find(color => (
             color.language == p.language.split(' ')[0]
         ))
+
         return (
             <div>
                 <ProjectCard
                     description={p.description}
                     imageUrl={p.image_url}
                     language={p.language}
-                    languageColor={languageColor.color}
+                    languageColor={languageColor ? languageColor.color : null}
                     name={p.name}
                 />
             </div>

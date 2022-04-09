@@ -37,12 +37,16 @@ export const FEATURES = [{
 }]
 export const LANGUAGE_COLORS = [
     {
-        language:'Swift',
-        color: 'bg-indigo-500'
+        language: 'Swift',
+        color: 'bg-red-500'
     },
     {
-        language:'JavaScript',
+        language: 'JavaScript',
         color: 'bg-green-500'
+    },
+    {
+        language: 'Software',
+        color: 'bg-pink-500'
     }
 ]
 export const MAIN_PROJECTS = [

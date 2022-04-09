@@ -39,7 +39,7 @@ const PostTile = (props) => {
                             </p>
                         </div>
                         <div className='post-subject flex justify-start'>
-                            <div className={`circle h-3 w-3 mr-5 my-auto ${subjectColor ?? 'bg-indigo-500'}`}>
+                            <div className={`circle h-3 w-3 mr-5 my-auto ${subjectColor ? subjectColor.color : 'bg-indigo-500'}`}>
                             </div>
                             <div>
                                 <p>
