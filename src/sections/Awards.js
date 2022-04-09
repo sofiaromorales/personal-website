@@ -21,7 +21,6 @@ const Awards = () => {
         })
     }
 
-
     return (
         <div
             id='Awards'

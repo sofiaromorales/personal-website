@@ -30,7 +30,7 @@ class PostContent extends React.Component {
         if (this.props.match.params.id != null){
             fetch(`${API_ROOT}/post/${this.props.match.params.id}`)
                 .then(response => {
-                    if (response.ok){
+                    if (response.ok) {
                         return Promise.resolve(response)
                     } else {
                         throw new Error()
@@ -104,8 +104,6 @@ class PostContent extends React.Component {
         )
     }
 
-
-
     render() {
 
         const {
@@ -125,7 +123,7 @@ class PostContent extends React.Component {
                         backgroundSize: `400% 400%`
                     }}
                 >
-                    <div className='post-title '>
+                    <div className='post-title'>
                         <p className='text-4xl font-bold tracking-wide'>
                             {this.state.title}
                         </p>

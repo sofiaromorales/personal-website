@@ -19,7 +19,7 @@ class App extends React.Component {
                         <Route path='/' exact>
                             <Home/>
                         </Route>
-                        <Route path='/posts' exact >
+                        <Route path='/posts' exact>
                             <Posts/>
                         </Route>
                         <Route

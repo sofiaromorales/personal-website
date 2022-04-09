@@ -20,7 +20,8 @@ const PostFooter = () => {
                 {OR_CONTACT_ME_VIA}
                 <a href={TWITTER_ADDRESS} target='_blank' rel='noreferrer'>
                     {TWITTER}
-                </a> 💜
+                </a> 
+                💜
             </p>
         </div>
     )
