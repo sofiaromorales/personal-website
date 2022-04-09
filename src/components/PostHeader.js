@@ -6,7 +6,7 @@ const HOME_LINK = '/'
 const PostHeader = () => {
     return (
         <div className='PostHeader grid auto-rows-max'>
-            <div className='top-bar py-8 px-20 xl:px-36'>
+            <div className='top-bar py-8 px-8 md:px-20 xl:px-36'>
                 <Link to={HOME_LINK}>
                     <p className='font-sans text-4xl font-bold tracking-wide'>
                         {`Sofía Rodríguez`}
