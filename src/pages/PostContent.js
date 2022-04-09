@@ -69,7 +69,7 @@ class PostContent extends React.Component {
                                     <img
                                         src={image.properties.src}
                                         alt={image.properties.alt}
-                                        style={{ maxWidth: 700, display: 'block', marginRight: 'auto', marginLeft: 'auto' }}
+                                        style={{ width: 'auto',maxWidth: 700, display: 'block', marginRight: 'auto', marginLeft: 'auto' }}
                                     />
                                 </div>
                             );
@@ -115,7 +115,7 @@ class PostContent extends React.Component {
         } = this.props.match.params
 
         return (
-            <div className='PostContent grid grid-rows-max'>
+            <div className='PostContent'>
                 <PostHeader />
                 <hr/>
                 <div
@@ -131,14 +131,14 @@ class PostContent extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className='px-60 pt-10'>
+                <div className='px-8 md:px-60 pt-10'>
                     <Link to={POSTS_LINK}>
                         <p className='secondary-text text-lg'>
                             {BACK_TO_POSTS}
                         </p>
                     </Link>
                 </div>
-                <div className='px-60 pt-10 mb-20'>
+                <div className='px-8 md:px-60 pt-10 mb-20'>
                     <p className='mb-10'>
                         {`${moment(this.state.date).format('MMMM Do YYYY')}  🔥 ${this.state.time}  🔥`}
                     </p>
@@ -149,10 +149,10 @@ class PostContent extends React.Component {
                         this.renderPost(this.state.post)
                     }
                 </div>
-                <div className='px-60'>
+                <div className='px-8 md:px-60'>
                     <PostFooter/>
                 </div>
-                <div className='grid grid-flow-col auto-cols-max px-60 mt-20 justify-center mb-20'>
+                <div className='grid grid-flow-col auto-cols-max px-8 md:px-60 mt-20 justify-center mb-20'>
                     <Link to={POSTS_LINK}>
                         <div className='back-to-posts px-5 py-2 border rounded border-4'>
                             <p className='secondary-text font-extrabold text-center text-lg'>
