@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import {
-    NAVIGATION_OPTIONS ,
+    NAVIGATION_OPTIONS,
     SOFIA_RODRIGUEZ
 } from '../constants'
 
@@ -53,7 +53,7 @@ const NavigationBar = () => {
         >
             <div className='title'>
                 <p className='font-sans text-3xl font-bold tracking-wide invisible md:visible'>
-                    { SOFIA_RODRIGUEZ }
+                    {SOFIA_RODRIGUEZ}
                 </p>
             </div>
             <div className='
