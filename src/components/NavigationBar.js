@@ -69,10 +69,6 @@ const NavigationBar = () => {
                 {renderNavigationOptions()}
             </div>
         </div>
-
-
-
-
     )
 }
 
