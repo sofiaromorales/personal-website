@@ -16,7 +16,6 @@ import {
     POSTS_LINK
 } from '../constants'
 
-
 class PostContent extends React.Component {
 
     state = {
@@ -26,8 +25,9 @@ class PostContent extends React.Component {
         title: null
     }
 
-    componentDidMount(){
-        if (this.props.match.params.id != null){
+    componentDidMount() {
+        
+        if (this.props.match.params.id != null) {
             fetch(`${API_ROOT}/post/${this.props.match.params.id}`)
                 .then(response => {
                     if (response.ok) {
@@ -54,6 +54,7 @@ class PostContent extends React.Component {
                     console.log(error);
                 })
         }
+        
     }
 
     renderPost = (post) => {
