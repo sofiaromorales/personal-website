@@ -42,16 +42,12 @@ const LatestPosts = () => {
 
     const renderPosts = () => {
         return posts.map(post => {
-            console.log(`post.subject.split(' ')[0]`);
-            console.log(post.subject.split(' ')[0]);
             const subjectColor = LANGUAGE_COLORS.find(color => (
                 color.language == post.subject.split(' ')[0]
             ))
             const color1 = getRandomColor()
             const color2 = getRandomColor()
             const color3 = getRandomColor()
-            console.log('subjectColor');
-            console.log(subjectColor);
             return (
                 <div>
                     <PostTile
