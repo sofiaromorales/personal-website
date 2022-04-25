@@ -16,7 +16,7 @@ import {
 class Posts extends React.Component {
 
     state = {
-        posts: [],
+        posts: []
     }
 
     componentDidMount(){
