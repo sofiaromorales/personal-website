@@ -73,8 +73,8 @@ class Posts extends React.Component {
 
         return (
             <div className='Posts'>
-                <PostHeader />
-                <hr />
+                <PostHeader/>
+                <hr/>
                 <div className='title px-8 md:px-20 xl:px-36 py-8'>
                     <p className='text-5xl font-semibold'>
                         {ME_AND_MY_THOUGHTS}
