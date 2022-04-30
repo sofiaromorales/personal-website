@@ -13,9 +13,7 @@ const Awards = () => {
         return AWARDS_LIST.map(award => {
             return (
                 <div>
-                    <AwardTile
-                        award={award}
-                    />
+                    <AwardTile award={award}/>
                 </div>
             )
         })
