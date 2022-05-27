@@ -19,7 +19,7 @@ class Posts extends React.Component {
         posts: []
     }
 
-    componentDidMount(){
+    componentDidMount() {
         fetch(`${API_ROOT}/all-posts`)
         .then(response => {
             if (response.ok){
