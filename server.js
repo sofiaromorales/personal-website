@@ -6,13 +6,6 @@ const cors = require('cors')
 const app = express()
 const isProduction = process.env.NODE_ENV === 'production';
 const port = isProduction ? process.env.PORT : 4000;
-// const whitelist = [
-//     'http://localhost:3000',
-//     'https://localhost:3000',
-//     'http://localhost:4000',
-//     'https://localhost:4000',
-//     'https://www.sofiaro.com'
-// ]
 const corsOptions = {
     origin: function (origin, callback) {
         callback(null, true)
