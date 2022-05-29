@@ -50,8 +50,7 @@ class PostContent extends React.Component {
                     this.setState({ time: post.slice(0, post.indexOf('\n',1)) })
                 })
                 .catch(error => {
-                    console.log('An error ocurred:');
-                    console.log(error);
+                    console.log('An error ocurred:' + error);
                 })
         }
         
