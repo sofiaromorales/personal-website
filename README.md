@@ -1,2 +1,2 @@
-Redesign for www.sofiaro.com
+www.sofiaro.com
 🌟
