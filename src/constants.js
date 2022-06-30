@@ -110,14 +110,13 @@ export const IF_YOU_LIKED = 'If you liked this post and wants to chat feel free 
 export const LATEST_POSTS = 'Latest Posts'
 export const LETS_CONNECT = `Let's Connect`
 export const ME_AND_MY_THOUGHTS = 'Me & my thoughts'
-
 export const MY_WORK = 'My Work'
 export const OR_CONTACT_ME_VIA = ' or contact me via '
 export const OTHERS = 'Others'
+export const SKILLS = 'Skills'
+export const SOFIA_RODRIGUEZ = 'Sofía Rodríguez'
+export const TWITTER = 'Twitter'
 export const QUOTE1 = `I'm a Problem Solver`
 export const QUOTE2 = `I'm a Product Designer`
 export const QUOTE3 = `I'm a Developer`
-export const SOFIA_RODRIGUEZ = 'Sofía Rodríguez'
-export const SKILLS = 'Skills'
-export const TWITTER = 'Twitter'
 export const WELCOME_TO_MY_BLOG = 'Welcome to my blog, here you will find some of my thoughts and experiences, some abouth tech some not.'
